@@ -1,0 +1,10 @@
+celery
+redis
+sqlalchemy
+psycopg2-binary
+python-dotenv
+openai
+langchain
+langgraph
+tenacity>=8.1.0,<9.0.0,!=8.4.0
+
