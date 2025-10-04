@@ -32,6 +32,7 @@ class Video(Base):
     external_id: Mapped[str] = Column(String(255), index=True, nullable=False)
     title: Mapped[str] = Column(String(500), nullable=True)
     description: Mapped[str] = Column(Text, nullable=True)
+    thumbnail_url: Mapped[str] = Column(String(500), nullable=True)
     has_captions: Mapped[bool] = Column(Boolean, default=False)
     created_at: Mapped[datetime] = Column(DateTime, default=datetime.utcnow, nullable=False)
 

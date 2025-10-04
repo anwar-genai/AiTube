@@ -16,10 +16,11 @@ def create_app() -> FastAPI:
         allow_headers=["*"],
     )
 
-    from .routers import channels, videos, summaries
+    from .routers import channels, videos, summaries, monitor
     app.include_router(channels.router, prefix="/channels", tags=["channels"])
     app.include_router(videos.router, prefix="/videos", tags=["videos"])
     app.include_router(summaries.router, prefix="/summaries", tags=["summaries"])
+    app.include_router(monitor.router, prefix="/monitor", tags=["monitor"])
 
     @app.get("/health")
     def health():

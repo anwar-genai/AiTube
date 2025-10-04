@@ -28,6 +28,7 @@ class VideoRead(BaseModel):
     external_id: str
     title: Optional[str]
     description: Optional[str]
+    thumbnail_url: Optional[str]
     has_captions: bool
     created_at: datetime
 
