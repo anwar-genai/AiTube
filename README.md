@@ -2,6 +2,14 @@
 
 A minimal, working boilerplate for tracking AI-related YouTube channels, transcribing/summarizing new videos, and surfacing results in a simple dashboard.
 
+## 🖼️ Demo
+
+### Landing Page
+![Landing Page](docs/images/AiTube.png)
+
+### APIs
+![Dashboard](docs/images/aiTube-backend.png)
+
 ## Purpose
 - Track channels and new uploads via YouTube API.
 - Use captions if available; otherwise transcribe audio (Whisper).
